@@ -10,3 +10,7 @@ https://www.kaggle.com/code/charel/learn-by-example-reinforcement-learning-with-
 https://www.kaggle.com/code/hwsiew/custom-gym-environment-for-reinforcement-learning
 https://www.kaggle.com/code/garethjns/convolutional-deep-q-learner
 https://www.youtube.com/watch?v=uKnjGn8fF70
+https://github.com/tensorflow/agents/blob/master/docs/tutorials/1_dqn_tutorial.ipynb
+
+https://pythonprogramming.net/custom-environment-reinforcement-learning-stable-baselines-3-tutorial/
+https://pythonprogramming.net/custom-environment-reinforcement-learning-stable-baselines-3-tutorial/
