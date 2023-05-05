@@ -13,4 +13,6 @@ https://www.youtube.com/watch?v=uKnjGn8fF70
 https://github.com/tensorflow/agents/blob/master/docs/tutorials/1_dqn_tutorial.ipynb
 
 https://pythonprogramming.net/custom-environment-reinforcement-learning-stable-baselines-3-tutorial/
-https://pythonprogramming.net/custom-environment-reinforcement-learning-stable-baselines-3-tutorial/
+https://www.geeksforgeeks.org/snake-game-in-python-using-pygame-module/
+https://keras.io/examples/rl/deep_q_network_breakout/
+https://www3.hs-albsig.de/wordpress/point2pointmotion/2020/10/09/deep-reinforcement-learning-with-the-snake-game/
