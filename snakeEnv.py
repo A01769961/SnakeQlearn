@@ -138,7 +138,7 @@ class snakeEnv(gym.Env):
             reward_a = 0
         # comida reward
         if self.prev_score < self.score:
-            reward_b = 10
+            reward_b = 1000
             self.prev_score = self.score
             self.timestep_passed_eating = 0
             self.valid_timestep_to_eat += 1
@@ -204,7 +204,7 @@ class snakeEnv(gym.Env):
         self.prev_dist = self.dist
         self.valid_timestep_to_eat = 30 + 40 + 3
         self.timestep_passed_eating = 0
-
+        print(self.render_mode)
         if self.render_mode == 'human':
             pygame.init()
             pygame.display.set_caption('Snake RL')
