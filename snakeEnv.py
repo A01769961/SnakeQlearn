@@ -11,7 +11,7 @@ ancho = 630
 altura = 480
 filas = 30
 columnas = 40
-fps = 30
+fps = 60
 
 def genSnake(s_body, s_dir): #Crea Snake
     if len(s_body) == 0:
@@ -133,12 +133,12 @@ class snakeEnv(gym.Env):
         #rewards/punishments
         # gameover punishment
         if self.done:
-            reward_a = -100
+            reward_a = -300
         else:
             reward_a = 0
         # comida reward
         if self.prev_score < self.score:
-            reward_b = 1000
+            reward_b = 3000
             self.prev_score = self.score
             self.timestep_passed_eating = 0
             self.valid_timestep_to_eat += 1
@@ -149,17 +149,17 @@ class snakeEnv(gym.Env):
         # distancia rewards/punishments
         self.dist = abs(self.s_body[0][0] - self.comida_pos[0]) + abs(self.s_body[0][1] - self.comida_pos[1])
         if self.dist > self.prev_dist:
-            reward_c = -1
+            reward_c = 0
         elif self.dist < self.prev_dist:
-            reward_c = 1
+            reward_c = 100
         else:
             reward_c = 0
         self.prev_dist = self.dist
 
          # castigo perder tiempo
-        #reward_d = -self.timestep_passed_eating // self.valid_timestep_to_eat
-        #self.reward = reward_a + reward_b + reward_c + reward_d
-        self.reward = reward_a + reward_b + reward_c
+        reward_d = -self.timestep_passed_eating // self.valid_timestep_to_eat
+        self.reward = reward_a + reward_b + reward_c + reward_d
+        #self.reward = reward_a + reward_b + reward_c
 
         self.info = {}
 
