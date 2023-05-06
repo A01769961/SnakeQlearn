@@ -16,3 +16,5 @@ https://pythonprogramming.net/custom-environment-reinforcement-learning-stable-b
 https://www.geeksforgeeks.org/snake-game-in-python-using-pygame-module/
 https://keras.io/examples/rl/deep_q_network_breakout/
 https://www3.hs-albsig.de/wordpress/point2pointmotion/2020/10/09/deep-reinforcement-learning-with-the-snake-game/
+
+https://www.youtube.com/watch?v=POyBab-M6tM
