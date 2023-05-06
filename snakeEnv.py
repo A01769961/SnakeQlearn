@@ -157,8 +157,9 @@ class snakeEnv(gym.Env):
         self.prev_dist = self.dist
 
          # castigo perder tiempo
-        reward_d = -self.timestep_passed_eating // self.valid_timestep_to_eat
-        self.reward = reward_a + reward_b + reward_c + reward_d
+        #reward_d = -self.timestep_passed_eating // self.valid_timestep_to_eat
+        #self.reward = reward_a + reward_b + reward_c + reward_d
+        self.reward = reward_a + reward_b + reward_c
 
         self.info = {}
 
